@@ -21,7 +21,7 @@ Documentation and logic for `SearchBar`, a unified search component for SwiftUI.
 Documentation and logic for `SymbolPicker`, a native SF Symbol picker for SwiftUI.
 *   **Appearance:** Customize symbol rendering (Filled/Outlined).
 *   **Color:** Support for `SymbolColor`, SwiftUI `Color`, and RGBA bindings.
-*   **Interaction:** Search-based filtering and custom dismissal behavior.
+*   **Interaction:** Custom dismissal behavior.
 
 ## Installation
 
