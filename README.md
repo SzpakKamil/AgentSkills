@@ -23,6 +23,13 @@ Documentation and logic for `SymbolPicker`, a native SF Symbol picker for SwiftU
 *   **Color:** Support for `SymbolColor`, SwiftUI `Color`, and RGBA bindings.
 *   **Interaction:** Custom dismissal behavior.
 
+### ColorKit
+Documentation and logic for `ColorKit`, a standalone library for advanced color manipulation and conversion.
+*   **Color Spaces:** Support for RGB, HSL, CMYK, LAB, LCH, and OKLAB.
+*   **Conversion:** High-precision color space conversions.
+*   **Utilities:** Hex string support, blending, and luminance calculations.
+*   **Compatibility:** Seamless integration with SwiftUI, UIKit, and AppKit.
+
 ## Installation
 
 ### CLI (skills.sh)
@@ -32,6 +39,7 @@ To install specific skills into your environment:
 npx skills add https://github.com/szpakkamil/agentskills --skill PagerKit
 npx skills add https://github.com/szpakkamil/agentskills --skill SearchBar
 npx skills add https://github.com/szpakkamil/agentskills --skill SymbolPicker
+npx skills add https://github.com/szpakkamil/agentskills --skill ColorKit
 ```
 
 ### Team Configuration
@@ -42,7 +50,8 @@ To automatically enable these skills for a repository using Claude Code, configu
   "enabledPlugins": {
     "PagerKit@agent-skills": true,
     "SearchBar@agent-skills": true,
-    "SymbolPicker@agent-skills": true
+    "SymbolPicker@agent-skills": true,
+    "ColorKit@agent-skills": true
   },
   "extraKnownMarketplaces": {
     "agent-skills": {
@@ -53,7 +62,7 @@ To automatically enable these skills for a repository using Claude Code, configu
 ```
 
 ### Manual
-Clone the repository and direct your AI assistant to the specific skill directory (`/PagerKit`, `/SymbolPicker` or `/SearchBar`) according to its documentation.
+Clone the repository and direct your AI assistant to the specific skill directory (`/PagerKit`, `/SymbolPicker`, `/SearchBar` or `/ColorKit`) according to its documentation.
 
 ## Structure
 
