@@ -1,0 +1,195 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agent-skills",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Kamil Szpak",
+    "email": "dev@kamilszpak.com"
+  },
+  "metadata": {
+    "description": "Expert guidance on PagerKit, SearchBar, SymbolPicker, and ColorKit SwiftUI/Swift packages."
+  },
+  "plugins": [
+    {
+      "name": "colorkit",
+      "description": "Expert guidance on ColorKit, a Swift library for advanced color manipulation, conversion, and accessibility management. Covers OKLAB, Display P3, sRGB, WCAG/APCA contrast, and blending.",
+      "repository": "https://github.com/SzpakKamil/ColorKit",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kamil Szpak",
+        "email": "dev@kamilszpak.com"
+      },
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "swift",
+        "color",
+        "manipulation",
+        "conversion",
+        "accessibility",
+        "oklab",
+        "wcag",
+        "apca",
+        "ios",
+        "macos",
+        "visionos"
+      ],
+      "tags": [
+        "swift",
+        "color",
+        "accessibility",
+        "apple-platforms"
+      ],
+      "source": "./ColorKit",
+      "skills": [
+        "./ColorKit"
+      ],
+      "strict": false
+    },
+    {
+      "name": "pagerkit",
+      "description": "Expert guidance on PagerKit, a SwiftUI library for advanced, customizable page-based navigation. Covers PKPagesView, PKPage, custom indicators, and dynamic generation.",
+      "repository": "https://github.com/SzpakKamil/PagerKit",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kamil Szpak",
+        "email": "dev@kamilszpak.com"
+      },
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "swiftui",
+        "pager",
+        "navigation",
+        "carousel",
+        "pagination",
+        "pages",
+        "ios",
+        "macos",
+        "visionos",
+        "watchos",
+        "tvos"
+      ],
+      "tags": [
+        "swiftui",
+        "pager",
+        "navigation",
+        "apple-platforms"
+      ],
+      "source": "./PagerKit",
+      "skills": [
+        "./PagerKit"
+      ],
+      "strict": false
+    },
+    {
+      "name": "searchbar",
+      "description": "Expert guidance on SearchBar, a customizable SwiftUI search component. Covers platform-adaptive styles, search tokens, suggestions, and focus management.",
+      "repository": "https://github.com/SzpakKamil/SearchBar",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kamil Szpak",
+        "email": "dev@kamilszpak.com"
+      },
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "swiftui",
+        "search",
+        "searchbar",
+        "tokens",
+        "suggestions",
+        "ios",
+        "macos",
+        "visionos"
+      ],
+      "tags": [
+        "swiftui",
+        "search",
+        "apple-platforms"
+      ],
+      "source": "./SearchBar",
+      "skills": [
+        "./SearchBar"
+      ],
+      "strict": false
+    },
+    {
+      "name": "symbolpicker",
+      "description": "Expert guidance on SymbolPicker, a native SwiftUI SF Symbol picker. Covers filled/outlined styles, color selection, and custom dismissal behavior.",
+      "repository": "https://github.com/SzpakKamil/SymbolPicker",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kamil Szpak",
+        "email": "dev@kamilszpak.com"
+      },
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "swiftui",
+        "sfsymbols",
+        "picker",
+        "icon",
+        "symbols",
+        "ios",
+        "macos",
+        "visionos"
+      ],
+      "tags": [
+        "swiftui",
+        "sfsymbols",
+        "apple-platforms"
+      ],
+      "source": "./SymbolPicker",
+      "skills": [
+        "./SymbolPicker"
+      ],
+      "strict": false
+    },
+    {
+      "name": "swift-concurrency",
+      "version": "1.0.0",
+      "description": "Expert guidance on Swift Concurrency best practices, patterns, and implementation. Covers async/await, actors, tasks, Sendable conformance, data race prevention, and Swift 6 migration strategies.",
+      "author": {
+        "name": "Antoine van der Lee",
+        "email": "contact@avanderlee.com"
+      },
+      "repository": "https://github.com/AvdLee/Swift-Concurrency-Agent-Skill",
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "swift",
+        "concurrency",
+        "async-await",
+        "actors",
+        "sendable",
+        "swift6",
+        "data-races",
+        "threading",
+        "task-groups",
+        "main-actor",
+        "core-data",
+        "migration",
+        "ios",
+        "macos",
+        "apple"
+      ],
+      "tags": [
+        "swift",
+        "concurrency",
+        "async-await",
+        "actors",
+        "sendable",
+        "swift6",
+        "data-races",
+        "threading",
+        "apple-platforms"
+      ],
+      "source": "./",
+      "skills": [
+        "./swift-concurrency"
+      ],
+      "strict": false
+    }
+  ]
+}
