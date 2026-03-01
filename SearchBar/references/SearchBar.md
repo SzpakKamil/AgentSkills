@@ -2,10 +2,10 @@
 
 ## Overview
 
-The `SearchBar` package offers a native, highly customizable search component for SwiftUI. It supports iOS, iPadOS, macOS, and visionOS, providing a unified API that adapts to each platform's conventions while offering advanced styling and data capabilities.
+The `SearchBar` package offers a native, highly customizable search component for SwiftUI. It supports iOS, iPadOS, macOS, tvOS, watchOS, and visionOS, providing a unified API that adapts to each platform's conventions while offering advanced styling and data capabilities.
 
 -   **iOS/iPadOS/visionOS**: Wraps `UISearchBar` via `UIViewRepresentable` for authentic platform behavior, including support for tokens and standard keyboard interactions.
--   **macOS**: Re-implements the search bar using native SwiftUI views (`TextField`, `HStack`, etc.) for maximum flexibility and consistency with macOS design patterns.
+-   **macOS/tvOS/watchOS**: Re-implements the search bar using native SwiftUI views (`TextField`, `HStack`, etc.) for maximum flexibility and consistency with each platform's design patterns.
 
 ## Setup
 
@@ -15,6 +15,8 @@ URL: `https://github.com/SzpakKamil/SearchBar.git`
 **Requirements:**
 -   iOS 14.0+
 -   macOS 11.0+
+-   tvOS 15.0+
+-   watchOS 10.0+
 -   visionOS 1.0+
 -   Swift 5.9+
 

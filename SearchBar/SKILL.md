@@ -1,25 +1,25 @@
 ---
 name: SearchBar
-description: 'Expert guidance on SearchBar, a customizable SwiftUI search component. Use when developers mention: (1) SearchBar, (2) custom search bars in SwiftUI, (3) search tokens or suggestions, (4) styling search bars (glass, capsule), (5) cross-platform search (iOS, macOS, visionOS), (6) specific SearchBar modifiers like .searchBarStyle or .searchBarSuggestions.'
+description: 'Expert guidance on SearchBar, a customizable SwiftUI search component. Use when developers mention: (1) SearchBar, (2) custom search bars in SwiftUI, (3) search tokens or suggestions, (4) styling search bars (glass, capsule), (5) cross-platform search (iOS, macOS, tvOS, watchOS, visionOS), (6) specific SearchBar modifiers like .searchBarStyle or .searchBarSuggestions.'
 ---
 # SearchBar Skill
 
 ## Overview
 
-This skill provides expert guidance on `SearchBar`, a powerful and highly customizable SwiftUI component for creating native-feeling search experiences across iOS, iPadOS, macOS, and visionOS. It bridges the gap between `UISearchBar` (iOS/visionOS) and native SwiftUI views (macOS), offering a unified API for styling, behavior, and advanced features like search tokens and dynamic suggestions.
+This skill provides expert guidance on `SearchBar`, a powerful and highly customizable SwiftUI component for creating native-feeling search experiences across iOS, iPadOS, macOS, tvOS, watchOS, and visionOS. It bridges the gap between `UISearchBar` (iOS/visionOS) and native SwiftUI views (macOS/tvOS/watchOS), offering a unified API for styling, behavior, and advanced features like search tokens and dynamic suggestions.
 
 ## Agent Behavior (Follow These Rules)
 
-1.  **Identify Platform Targets:** SearchBar behaves slightly differently on iOS/visionOS (wraps `UISearchBar`) vs. macOS (custom SwiftUI). Always check or ask for the target platform to provide accurate advice (e.g., specific material effects or token behaviors).
+1.  **Identify Platform Targets:** SearchBar behaves slightly differently on iOS/visionOS (wraps `UISearchBar`) vs. macOS, tvOS, and watchOS (custom SwiftUI). Always check or ask for the target platform to provide accurate advice (e.g., specific material effects or token behaviors).
 2.  **Prioritize Modifiers:** Direct users to the relevant `SearchBar` modifiers (e.g., `.searchBarStyle`, `.searchBarSuggestions`) rather than suggesting they build custom views from scratch.
-3.  **Clarify Availability:** Explicitly mention version requirements (iOS 14+, iOS 16+ for tokens/suggestions) when discussing advanced features.
+3.  **Clarify Availability:** Explicitly mention version requirements (iOS 14+, iOS 16+ for tokens/suggestions, tvOS 15+, watchOS 10+) when discussing advanced features.
 4.  **Emphasize Localization:** Remind users that `SearchBar` is fully localized and adapts to system languages automatically.
 5.  **Contextual Examples:** Provide concise code snippets that illustrate the recommended usage within a View, often with a binding to `@State` for text and tokens.
 6.  **Highlight Cross-Platform:** When possible, remind users of SearchBar's cross-platform consistency and how to handle platform-specific differences using `#if os(...)` directives if necessary (though the library handles most internally).
 
 ## Project Settings
 
--   **Deployment Targets:** iOS 14.0+, iPadOS 14.0+, macOS 11.0+, visionOS 1.0+.
+-   **Deployment Targets:** iOS 14.0+, iPadOS 14.0+, macOS 11.0+, tvOS 15.0+, watchOS 10.0+, visionOS 1.0+.
 -   **Advanced Features:** Tokens and Suggestions require iOS 16.0+, iPadOS 16.0+, visionOS 1.0+. (Suggestions also on macOS 15.0+).
 -   **Swift Version:** Swift 5.9+.
 
@@ -95,7 +95,7 @@ SearchBar is integrated via Swift Package Manager.
 
 1.  **Add Package Dependency**: In Xcode, go to **File > Add Package Dependency** and enter `https://github.com/SzpakKamil/SearchBar.git`.
 2.  **Import**: `import SearchBar` in your Swift files.
-3.  **Deployment Targets**: Ensure your project targets iOS 14.0+, macOS 11.0+, visionOS 1.0+.
+3.  **Deployment Targets**: Ensure your project targets iOS 14.0+, macOS 11.0+, tvOS 15.0+, watchOS 10.0+, visionOS 1.0+.
 
 For detailed setup, see `references/SearchBar.md`.
 
