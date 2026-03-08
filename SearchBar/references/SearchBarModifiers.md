@@ -118,13 +118,14 @@ Button("Focus Search") { isFocused = true }
 
 ### Keyboard & Input (iOS/visionOS)
 
-These modifiers wrap standard `UITextInputTraits`.
+These modifiers wrap standard `UITextInputTraits` or provided extra features.
 
--   `.searchBarReturnKeyType(_ type: UIReturnKeyType)`: e.g., `.go`, `.search`, `.done`.
--   `.searchBarKeyboardType(_ type: UIKeyboardType)`: e.g., `.emailAddress`, `.numberPad`.
--   `.searchBarAutoCorrectionType(_ type: UITextAutocorrectionType)`: `.default`, `.no`, `.yes`.
--   `.searchBarAutoCapitalizationType(_ type: UITextAutocapitalizationType)`: `.none`, `.words`, `.sentences`.
--   `.searchBarTextContentType(_ type: UITextContentType)`: e.g., `.emailAddress`.
+- `.searchBarLookToDictateEnabled(_ value: Bool)`: Enables or disables the "Look to Dictate" feature (iOS 17.0+ and visionOS). This allows users to initiate dictation by looking at the microphone icon.
+- `.searchBarReturnKeyType(_ type: UIReturnKeyType)`: e.g., `.go`, `.search`, `.done`.
+- `.searchBarKeyboardType(_ type: UIKeyboardType)`: e.g., `.emailAddress`, `.numberPad`.
+- `.searchBarAutoCorrectionType(_ type: UITextAutocorrectionType)`: `.default`, `.no`, `.yes`.
+- `.searchBarAutoCapitalizationType(_ type: UITextAutocapitalizationType)`: `.none`, `.words`, `.sentences`.
+- `.searchBarTextContentType(_ type: UITextContentType)`: e.g., `.emailAddress`.
 
 ## Button Configuration
 

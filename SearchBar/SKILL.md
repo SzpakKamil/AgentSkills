@@ -38,6 +38,7 @@ This skill provides expert guidance on `SearchBar`, a powerful and highly custom
     *   Showing/Hiding Cancel or Clear buttons → `references/SearchBarDisplayModes.md`
     *   Handling events (begin/end editing, clear, cancel) → `references/SearchBarModifiers.md`
     *   Focus management → `references/SearchBarModifiers.md` (`.searchBarIsFocused`)
+    *   **"Look to Dictate" (visionOS/iOS 17+)** → `references/SearchBarModifiers.md` (`.searchBarLookToDictateEnabled`)
 
 4.  **Using advanced search features (iOS 16+/visionOS)?**
     *   Adding filter tokens (capsules) → `references/SearchBarData.md`
@@ -51,6 +52,8 @@ This skill provides expert guidance on `SearchBar`, a powerful and highly custom
 -   **"Tokens/Suggestions are not showing up."**
     *   Verify the deployment target is iOS 16.0+ or visionOS 1.0+.
     *   Ensure the binding to tokens/suggestions is active and populated.
+-   **"How do I enable 'Look to Dictate' for visionOS?"**
+    *   Use `.searchBarLookToDictateEnabled(true)`. Note: Requires iOS 17.0+ or visionOS 1.0+.
 -   **"How do I change the background color?"**
     *   Use `.searchBarStyle(..., backgroundColor: .red)`. See `references/SearchBarStyle.md`.
 -   **"I want to hide the cancel button."**
@@ -79,6 +82,7 @@ SearchBar(text: $text)
     .searchBarCurrentTokens($tokens)
     .searchBarSuggestions($suggestions)
     .searchBarEnableAutomaticSuggestionsFiltering(true)
+    .searchBarLookToDictateEnabled(true) // iOS 17+ / visionOS
 ```
 
 ### Event Handling
