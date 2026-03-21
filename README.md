@@ -1,39 +1,39 @@
 # Agent Skills
 
-This repository serves as a source of context for AI coding assistants. It contains specialized skill packages that provide implementation details, API references, and best practices for my Packages.
+AI coding assistant context. Skill packages for implementation details, API references, and best practices.
 
 ## Skills
 
 ### PagerKit
-Documentation and logic for `PagerKit`, a SwiftUI library for page-based navigation.
-*   **Configuration:** Setup for `PKPagesView` and `PKPage`.
-*   **Content:** Dynamic generation using `ForEach`.
-*   **Customization:** Indicators, styling, and orientation.
-*   **Events:** Handling state changes and navigation direction.
+Context for `PagerKit`, a SwiftUI library for page-based navigation.
+*   **Configuration:** `PKPagesView` and `PKPage` setup.
+*   **Content:** Dynamic generation (`ForEach`).
+*   **Customization:** Indicators, styling, orientation.
+*   **Events:** State changes, navigation direction.
 
 ### SearchBar
-Documentation and logic for `SearchBar`, a unified search component for SwiftUI.
+Context for `SearchBar`, a unified search component for SwiftUI.
 *   **Styling:** Platform-adaptive styles (Capsule, Rounded, Glass).
-*   **Features:** Search tokens and suggestions (iOS 16+).
-*   **Behavior:** Focus management and display modes.
+*   **Features:** Search tokens, suggestions.
+*   **Behavior:** Focus management, display modes.
 
 ### SymbolPicker
-Documentation and logic for `SymbolPicker`, a native SF Symbol picker for SwiftUI.
-*   **Appearance:** Customize symbol rendering (Filled/Outlined).
-*   **Color:** Support for `SymbolColor`, SwiftUI `Color`, and RGBA bindings.
+Context for `SymbolPicker`, a native SF Symbol picker for SwiftUI.
+*   **Appearance:** Symbol rendering (Filled/Outlined).
+*   **Color:** `SymbolColor`, SwiftUI `Color`, RGBA bindings.
 *   **Interaction:** Custom dismissal behavior.
 
 ### ColorKit
-Documentation and logic for `ColorKit`, a standalone library for advanced color manipulation and conversion.
-*   **Color Spaces:** Support for RGB, HSL, CMYK, LAB, LCH, and OKLAB.
-*   **Conversion:** High-precision color space conversions.
-*   **Utilities:** Hex string support, blending, and luminance calculations.
-*   **Compatibility:** Seamless integration with SwiftUI, UIKit, and AppKit.
+Context for `ColorKit`, a library for advanced color manipulation.
+*   **Color Spaces:** RGB, HSL, CMYK, LAB, LCH, OKLAB.
+*   **Conversion:** High-precision conversions.
+*   **Utilities:** Hex strings, blending, luminance.
+*   **Compatibility:** SwiftUI, UIKit, AppKit.
 
 ## Installation
 
-### CLI (skills.sh)
-To install specific skills into your environment:
+### CLI
+Install specific skills:
 
 ```bash
 npx skills add https://github.com/szpakkamil/agentskills --skill PagerKit
@@ -43,7 +43,7 @@ npx skills add https://github.com/szpakkamil/agentskills --skill ColorKit
 ```
 
 ### Team Configuration
-To automatically enable these skills for a repository using Claude Code, configure `.claude/settings.json`:
+Enable automatically in `.claude/settings.json`:
 
 ```json
 {
@@ -62,15 +62,15 @@ To automatically enable these skills for a repository using Claude Code, configu
 ```
 
 ### Manual
-Clone the repository and direct your AI assistant to the specific skill directory (`/PagerKit`, `/SymbolPicker`, `/SearchBar` or `/ColorKit`) according to its documentation.
+Clone the repository. Direct your AI assistant to the specific skill directory (`/PagerKit`, `/SymbolPicker`, `/SearchBar`, `/ColorKit`).
 
 ## Structure
 
-This repository adheres to the [Agent Skills](https://agentskills.io/home) open format.
-*   **SKILL.md:** Defines the decision logic and usage patterns.
-*   **references/:** Contains specific API documentation and examples.
+Adheres to the [Agent Skills](https://agentskills.io/home) open format.
+*   **SKILL.md:** Decision logic and usage patterns.
+*   **references/:** API documentation and examples.
 
 ## License
 
 Copyright © 2026 Kamil Szpak.
-MIT License. See [LICENSE.md](LICENSE.md) for details.
+MIT License. See [LICENSE.md](LICENSE.md).
